@@ -3,6 +3,8 @@ const pulseButton = document.querySelector("#pulseButton");
 const themeLabel = document.querySelector("#themeLabel");
 const clickCount = document.querySelector("#clickCount");
 
+const PULSE_ANIMATION_DURATION_MS = 220;
+
 let count = 0;
 
 themeButton.addEventListener("click", () => {
@@ -19,6 +21,6 @@ pulseButton.addEventListener("click", () => {
       { transform: "scale(1.06)" },
       { transform: "scale(1)" }
     ],
-    { duration: 220, easing: "ease-out" }
+    { duration: PULSE_ANIMATION_DURATION_MS, easing: "ease-out" }
   );
 });
