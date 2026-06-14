@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codex Git Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">GitHub testing playground</p>
+          <h1 id="page-title">一个用来测试代码管理的小网页</h1>
+          <p class="intro">
+            这里有几个能直接交互的区域，适合测试批注、改文案、改样式、加功能，以及观察 Git 提交前后的变化。
+          </p>
+          <div class="actions">
+            <button id="themeButton" class="button primary" type="button">切换主题</button>
+            <button id="pulseButton" class="button secondary" type="button">点我计数</button>
+          </div>
+        </div>
+
+        <aside class="status-panel" aria-label="项目状态">
+          <div class="status-row">
+            <span>当前主题</span>
+            <strong id="themeLabel">清爽模式</strong>
+          </div>
+          <div class="status-row">
+            <span>点击次数</span>
+            <strong id="clickCount">0</strong>
+          </div>
+          <div class="status-row">
+            <span>页面状态</span>
+            <strong>可修改</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="workspace" aria-label="测试内容">
+        <article class="panel">
+          <h2>可以批注的内容</h2>
+          <p>
+            这段文字故意写得比较普通，方便你测试让我把它改得更正式、更可爱、更像产品介绍，或者拆成更清楚的列表。
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>待办清单</h2>
+          <ul class="todo-list">
+            <li>
+              <label>
+                <input type="checkbox" checked>
+                初始化 Git 仓库
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked>
+                创建可见网页
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                关联 GitHub 远程仓库
+              </label>
+            </li>
+          </ul>
+        </article>
+
+        <article class="panel accent">
+          <h2>下一步测试建议</h2>
+          <p>
+            你可以让我把按钮换成图标、增加表单、改成深色仪表盘、接入 GitHub Pages，或者给这个页面增加一个小动画。
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
