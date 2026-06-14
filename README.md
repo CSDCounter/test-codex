@@ -12,3 +12,5 @@
 - `styles.css`: 页面样式和响应式布局
 - `app.js`: 主题切换和计数交互
 - `blank.docx`: 之前创建的空白 Word 文档
+
+PR flow practice: created from VS Code and merged through GitHub.
